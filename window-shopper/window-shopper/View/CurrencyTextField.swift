@@ -8,10 +8,19 @@
 
 import UIKit
 
+@IBDesignable
 class CurrencyTextField: UITextField {
 
+    override func prepareForInterfaceBuilder() {
+        customizeView()
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
+        customizeView()
+        
+    }
+    
+    func customizeView() {
         layer.cornerRadius = 4
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.652531036)
         textAlignment = .center
@@ -21,7 +30,6 @@ class CurrencyTextField: UITextField {
             attributedPlaceholder = placehld
             textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
-        
     }
     /*
     // Only override draw() if you perform custom drawing.
