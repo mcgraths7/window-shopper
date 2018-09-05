@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AD8C7167214041E90016B1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C7166214041E90016B1B2 /* AppDelegate.swift */; };
-		AD8C7169214041E90016B1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C7168214041E90016B1B2 /* ViewController.swift */; };
+		AD8C7169214041E90016B1B2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C7168214041E90016B1B2 /* MainVC.swift */; };
 		AD8C716C214041E90016B1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8C716A214041E90016B1B2 /* Main.storyboard */; };
 		AD8C716E214041EB0016B1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8C716D214041EB0016B1B2 /* Assets.xcassets */; };
 		AD8C7171214041EB0016B1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8C716F214041EB0016B1B2 /* LaunchScreen.storyboard */; };
+		AD8C717C214045000016B1B2 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C717B214045000016B1B2 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD8C7163214041E90016B1B2 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8C7166214041E90016B1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD8C7168214041E90016B1B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD8C7168214041E90016B1B2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		AD8C716B214041E90016B1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD8C716D214041EB0016B1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8C7170214041EB0016B1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8C7172214041EB0016B1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8C717B214045000016B1B2 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		AD8C7165214041E90016B1B2 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				AD8C717A214043C80016B1B2 /* View */,
+				AD8C7179214043C10016B1B2 /* Model */,
+				AD8C71782140437F0016B1B2 /* Controller */,
 				AD8C7166214041E90016B1B2 /* AppDelegate.swift */,
-				AD8C7168214041E90016B1B2 /* ViewController.swift */,
 				AD8C716A214041E90016B1B2 /* Main.storyboard */,
 				AD8C716D214041EB0016B1B2 /* Assets.xcassets */,
 				AD8C716F214041EB0016B1B2 /* LaunchScreen.storyboard */,
 				AD8C7172214041EB0016B1B2 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		AD8C71782140437F0016B1B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C7168214041E90016B1B2 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD8C7179214043C10016B1B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD8C717A214043C80016B1B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C717B214045000016B1B2 /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8C7169214041E90016B1B2 /* ViewController.swift in Sources */,
+				AD8C717C214045000016B1B2 /* CurrencyTextField.swift in Sources */,
+				AD8C7169214041E90016B1B2 /* MainVC.swift in Sources */,
 				AD8C7167214041E90016B1B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
