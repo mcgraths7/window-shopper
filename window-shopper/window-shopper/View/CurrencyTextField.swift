@@ -38,5 +38,20 @@ class CurrencyTextField: UITextField {
         // Drawing code
     }
     */
+    
+    override func draw(_ rect: CGRect) {
+        let size: CGFloat = 20
+        let currencyLbl = UILabel(frame: CGRect(x: 5, y: frame.size.height / 2 - size / 2, width: size, height: size))
+        currencyLbl.backgroundColor = #colorLiteral(red: 0.5023449063, green: 0.5023449063, blue: 0.5023449063, alpha: 0.7471639555)
+        currencyLbl.textAlignment = .center
+        currencyLbl.textColor = #colorLiteral(red: 0.2861929238, green: 0.2861929238, blue: 0.2861929238, alpha: 1)
+        currencyLbl.layer.cornerRadius = 5.0
+        currencyLbl.clipsToBounds = true
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = .current
+        currencyLbl.text = formatter.currencySymbol
+        addSubview(currencyLbl)
+    }
 
 }
